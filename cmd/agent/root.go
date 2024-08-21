@@ -17,6 +17,7 @@ var rootCmd = &cobra.Command{
 	},
 }
 
+//nolint:unused
 var agentConfig config.AgentConfig
 
 func init() {

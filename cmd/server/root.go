@@ -17,6 +17,7 @@ var rootCmd = &cobra.Command{
 	},
 }
 
+//nolint:unused
 var serverConfig config.ServerConfig
 
 func init() {
