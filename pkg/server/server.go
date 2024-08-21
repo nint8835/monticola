@@ -1,7 +1,10 @@
 package server
 
 import (
+	"log/slog"
+
 	"github.com/labstack/echo/v4"
+	slogecho "github.com/samber/slog-echo"
 
 	"github.com/nint8835/monticola/pkg/config"
 )
@@ -23,6 +26,8 @@ func New(c *config.ServerConfig) (*Server, error) {
 	}
 
 	echoInst.HideBanner = true
+
+	echoInst.Use(slogecho.New(slog.Default()))
 
 	return serverInst, nil
 }
