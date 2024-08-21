@@ -24,7 +24,10 @@ func init() {
 	cobra.OnInitialize(func() {
 		configInst, err := config.LoadServerConfig()
 		if err != nil {
-			slog.Error("Error loading server config", "err", err)
+			slog.Error(
+				"Error loading server config",
+				slog.String("err", err.Error()),
+			)
 			os.Exit(1)
 		}
 

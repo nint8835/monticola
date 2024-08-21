@@ -24,7 +24,10 @@ func init() {
 	cobra.OnInitialize(func() {
 		configInst, err := config.LoadAgentConfig()
 		if err != nil {
-			slog.Error("Error loading agent config", "err", err)
+			slog.Error(
+				"Error loading agent config",
+				slog.String("err", err.Error()),
+			)
 			os.Exit(1)
 		}
 
