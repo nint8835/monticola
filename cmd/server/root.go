@@ -17,8 +17,7 @@ var rootCmd = &cobra.Command{
 	},
 }
 
-//nolint:unused
-var serverConfig config.ServerConfig
+var serverConfig *config.ServerConfig
 
 func init() {
 	cobra.OnInitialize(func() {
@@ -31,7 +30,7 @@ func init() {
 			os.Exit(1)
 		}
 
-		serverConfig = *configInst
+		serverConfig = configInst
 	})
 }
 

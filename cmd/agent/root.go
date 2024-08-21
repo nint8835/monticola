@@ -18,7 +18,7 @@ var rootCmd = &cobra.Command{
 }
 
 //nolint:unused
-var agentConfig config.AgentConfig
+var agentConfig *config.AgentConfig
 
 func init() {
 	cobra.OnInitialize(func() {
@@ -31,7 +31,7 @@ func init() {
 			os.Exit(1)
 		}
 
-		agentConfig = *configInst
+		agentConfig = configInst
 	})
 }
 
