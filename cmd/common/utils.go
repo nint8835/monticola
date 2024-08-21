@@ -8,7 +8,7 @@ func CheckError(err error, msg string) {
 	if err != nil {
 		slog.Error(
 			msg,
-			slog.String("err", err.Error()),
+			slog.String("error", err.Error()),
 		)
 	}
 }

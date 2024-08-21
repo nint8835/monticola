@@ -25,7 +25,7 @@ func init() {
 		if err != nil {
 			slog.Error(
 				"Error loading server config",
-				slog.String("err", err.Error()),
+				slog.String("error", err.Error()),
 			)
 			os.Exit(1)
 		}
