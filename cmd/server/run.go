@@ -4,7 +4,7 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/nint8835/monticola/cmd/common"
-	"github.com/nint8835/monticola/pkg/server"
+	"github.com/nint8835/monticola/pkg/api/server"
 )
 
 var runCmd = &cobra.Command{

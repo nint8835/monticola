@@ -1,0 +1,30 @@
+openapi: "3.0.3"
+
+info:
+  title: Monticola
+  version: "0.1"
+
+paths:
+  /test:
+    get:
+      summary: Test endpoint
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Test'
+
+components:
+  schemas:
+    Test:
+      type: object
+      description: A test object
+      properties:
+        message:
+          type: string
+          description: A message
+      required:
+        - message
+
