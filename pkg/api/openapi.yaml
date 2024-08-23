@@ -27,4 +27,3 @@ components:
           description: A message
       required:
         - message
-
