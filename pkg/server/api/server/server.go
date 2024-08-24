@@ -9,8 +9,8 @@ import (
 	oapimiddleware "github.com/oapi-codegen/echo-middleware"
 	slogecho "github.com/samber/slog-echo"
 
-	"github.com/nint8835/monticola/pkg/api/models"
 	"github.com/nint8835/monticola/pkg/config"
+	"github.com/nint8835/monticola/pkg/server/api/models"
 )
 
 var _ ServerInterface = (*Server)(nil)

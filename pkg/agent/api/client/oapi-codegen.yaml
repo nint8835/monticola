@@ -4,5 +4,5 @@ output: ./client.gen.go
 generate:
   client: true
 additional-imports:
-  - package: github.com/nint8835/monticola/pkg/api/models
+  - package: github.com/nint8835/monticola/pkg/agent/api/models
     alias: .

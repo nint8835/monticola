@@ -12,7 +12,7 @@ import (
 	"net/url"
 	"strings"
 
-	. "github.com/nint8835/monticola/pkg/api/models"
+	. "github.com/nint8835/monticola/pkg/agent/api/models"
 )
 
 // RequestEditorFn  is the function signature for the RequestEditor callback function

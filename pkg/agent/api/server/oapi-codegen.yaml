@@ -6,5 +6,5 @@ generate:
   embedded-spec: true
 # Uncomment once there are APIs that should take a request body of some sort
 #additional-imports:
-#  - package: github.com/nint8835/monticola/pkg/api/models
+#  - package: github.com/nint8835/monticola/pkg/agent/api/models
 #    alias: .

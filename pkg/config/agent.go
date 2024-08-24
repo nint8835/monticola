@@ -6,6 +6,9 @@ import (
 
 type AgentConfig struct {
 	SharedConfig
+
+	// ListenAddress is the address to listen on
+	ListenAddress string `split_words:"true" default:":8081"`
 }
 
 func LoadAgentConfig() (*AgentConfig, error) {
